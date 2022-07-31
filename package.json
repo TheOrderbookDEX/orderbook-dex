@@ -1,6 +1,6 @@
 {
   "name": "@theorderbookdex/orderbook-dex",
-  "version": "1.0.0-rc.0",
+  "version": "1.0.0-rc.1",
   "description": "This is the main package of The Orderbook DEX",
   "license": "BUSL-1.1",
   "author": "The Orderbook DEX Team",
@@ -11,12 +11,12 @@
     "test": "mocha"
   },
   "dependencies": {
-    "@theorderbookdex/abi2ts-lib": "~0.1.0",
+    "@theorderbookdex/abi2ts-lib": "~0.2.0",
     "@openzeppelin/contracts": "4.6.0"
   },
   "devDependencies": {
-    "@theorderbookdex/abi2ts": "~0.1.0",
-    "@theorderbookdex/contract-test-helper": "~0.1.0",
+    "@theorderbookdex/abi2ts": "~0.2.0",
+    "@theorderbookdex/contract-test-helper": "~0.2.0",
     "@theorderbookdex/solidity-compiler": "0.8.15",
     "@types/chai": "~4.3.1",
     "@types/chai-as-promised": "~7.1.5",
