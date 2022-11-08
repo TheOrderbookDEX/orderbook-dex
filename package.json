@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "@frugal-wizard/abi2ts-lib": "^0.4.0",
-    "@openzeppelin/contracts": "4.7.3"
+    "@openzeppelin/contracts": "4.8.0"
   },
   "devDependencies": {
     "@frugal-wizard/abi2ts": "^0.4.0",
