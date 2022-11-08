@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: BUSL-1.1
 
-pragma solidity 0.8.15;
+pragma solidity 0.8.17;
 
 /**
  * An ERC20 token wrapper that allows non standard tokens to be used in an orderbook.
