@@ -1,6 +1,6 @@
 {
   "name": "@theorderbookdex/orderbook-dex",
-  "version": "1.0.0-rc.9",
+  "version": "1.0.0-rc.10",
   "description": "This is the main package of The Orderbook DEX",
   "license": "BUSL-1.1",
   "author": "The Orderbook DEX Team",
@@ -13,12 +13,12 @@
     "typecheck": "tsc"
   },
   "dependencies": {
-    "@frugal-wizard/abi2ts-lib": "^0.5.1",
+    "@frugal-wizard/abi2ts-lib": "^0.6.2",
     "@openzeppelin/contracts": "4.8.0"
   },
   "devDependencies": {
-    "@frugal-wizard/abi2ts": "^0.5.2",
-    "@frugal-wizard/contract-test-helper": "^0.3.0",
+    "@frugal-wizard/abi2ts": "^0.6.0",
+    "@frugal-wizard/contract-test-helper": "^0.4.0",
     "@frugal-wizard/solidity-compiler-wrapper": "^1.1.0",
     "@types/chai": "^4.3.4",
     "@types/chai-as-promised": "^7.1.5",
@@ -32,7 +32,7 @@
     "@typescript-eslint/parser": "^5.45.0",
     "chai": "^4.3.7",
     "chai-as-promised": "^7.1.1",
-    "eslint": "^8.28.0",
+    "eslint": "^8.29.0",
     "fancy-log": "^2.0.0",
     "gulp": "^4.0.2",
     "gulp-cli": "^2.3.0",
