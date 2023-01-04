@@ -2,6 +2,8 @@
 
 pragma solidity ^0.8.0;
 
+import { IOrderbookDEXTeamTreasury } from "./IOrderbookDEXTeamTreasury.sol";
+
 /**
  * Orderbook factory.
  */
@@ -23,4 +25,11 @@ interface IOrderbookFactory {
         uint256         contractSize,
         uint256         priceTick
     );
+
+    /**
+     * The Orderbook DEX Treasury.
+     *
+     * @return treasury the Orderbook DEX Treasury
+     */
+    function treasury() external view returns (IOrderbookDEXTeamTreasury treasury);
 }

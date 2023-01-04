@@ -2,6 +2,8 @@
 
 pragma solidity ^0.8.0;
 
+import { IOrderbookDEXTeamTreasury } from "./IOrderbookDEXTeamTreasury.sol";
+
 /**
  * Orderbook exchange for a token pair.
  */
@@ -75,4 +77,11 @@ interface IOrderbook {
      * @return nextBuyPrice the next available buy price point
      */
     function nextBuyPrice(uint256 price) external view returns (uint256 nextBuyPrice);
+
+    /**
+     * The Orderbook DEX Treasury.
+     *
+     * @return treasury the Orderbook DEX Treasury
+     */
+    function treasury() external view returns (IOrderbookDEXTeamTreasury treasury);
 }
