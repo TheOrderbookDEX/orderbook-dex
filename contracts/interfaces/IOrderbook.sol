@@ -9,6 +9,13 @@ import { IOrderbookDEXTeamTreasury } from "./IOrderbookDEXTeamTreasury.sol";
  */
 interface IOrderbook {
     /**
+     * Claim collected fees.
+     *
+     * This can only be called by the Orderbook DEX Team Treasury contract.
+     */
+    function claimFees() external;
+
+    /**
      * The orderbook version.
      *
      * From right to left, the first two digits is the patch version, the second two digits the minor version,
@@ -84,4 +91,12 @@ interface IOrderbook {
      * @return treasury the Orderbook DEX Treasury
      */
     function treasury() external view returns (IOrderbookDEXTeamTreasury treasury);
+
+    /**
+     * The total collected fees that have not yet been claimed.
+     *
+     * @return collectedTradedToken the amount in traded token
+     * @return collectedBaseToken   the amount in base token
+     */
+    function collectedFees() external view returns (uint256 collectedTradedToken, uint256 collectedBaseToken);
 }
