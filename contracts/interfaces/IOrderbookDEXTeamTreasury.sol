@@ -15,8 +15,7 @@ interface IOrderbookDEXTeamTreasury {
      *
      * This function should not revert. Failing to do so will be interpreted as the fee being 0.
      *
-     * The should not be higher than a prespecified value (TBD), if it is higher the actual fee used will be the
-     * prespecified value.
+     * The should not be higher than 0.005, if it is higher 0.005 will be used.
      *
      * @param  version the orderbook version
      * @return fee     the fee

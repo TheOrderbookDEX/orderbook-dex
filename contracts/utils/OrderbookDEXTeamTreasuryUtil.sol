@@ -4,13 +4,11 @@ pragma solidity ^0.8.0;
 
 import { IOrderbookDEXTeamTreasury } from "../interfaces/IOrderbookDEXTeamTreasury.sol";
 
-// TODO test OrderbookDEXTeamTreasuryUtil
-
 library OrderbookDEXTeamTreasuryUtil {
     /**
-     * Max fee (actual value TBD).
+     * Max fee.
      */
-    uint256 constant MAX_FEE = 0.001 ether;
+    uint256 constant MAX_FEE = 0.005 ether;
 
     /**
      * The current fee applied to orderbooks of a specific version.
