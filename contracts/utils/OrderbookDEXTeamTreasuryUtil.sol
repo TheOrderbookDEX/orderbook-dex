@@ -3,8 +3,11 @@
 pragma solidity ^0.8.0;
 
 import { IOrderbookDEXTeamTreasury } from "../interfaces/IOrderbookDEXTeamTreasury.sol";
+import { Address } from "@openzeppelin/contracts/utils/Address.sol";
 
 library OrderbookDEXTeamTreasuryUtil {
+    using Address for address;
+
     /**
      * Max fee.
      */
@@ -18,6 +21,9 @@ library OrderbookDEXTeamTreasuryUtil {
      * @return fee      the fee
      */
     function safeFee(IOrderbookDEXTeamTreasury treasury, uint32 version) internal view returns (uint256 fee) {
+        if (!address(treasury).isContract()) {
+            return 0;
+        }
         try treasury.fee{ gas: 10000 }(version) returns (uint256 fee_) {
             if (fee_ > MAX_FEE) {
                 fee = MAX_FEE;

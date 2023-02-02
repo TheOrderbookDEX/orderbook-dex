@@ -1,4 +1,4 @@
-import { Address, parseValue } from '@frugal-wizard/abi2ts-lib';
+import { Address, parseValue, ZERO_ADDRESS } from '@frugal-wizard/abi2ts-lib';
 import { createEthereumScenario, EthereumScenario, EthereumSetupContext, TestSetupContext } from '@frugal-wizard/contract-test-helper';
 import { OrderbookDEXTeamTreasuryErroredMock } from '../../src/testing/OrderbookDEXTeamTreasuryErroredMock';
 import { OrderbookDEXTeamTreasuryMock } from '../../src/testing/OrderbookDEXTeamTreasuryMock';
@@ -12,6 +12,7 @@ export enum Treasury {
     OTTFEE  = 'ottFeeTreasury',
     OTTGAS  = 'ottGasTreasury',
     ERRORED = 'erroredTreasury',
+    INVALID = 'invalidTreasury',
 }
 
 type Treasuries = {
@@ -46,6 +47,7 @@ export function createTreasuryUtilScenario<Context>({
                 const ottFeeTreasury  = (await OrderbookDEXTeamTreasuryMock.deploy(parseValue('0.0051'))).address;
                 const ottGasTreasury  = (await OrderbookDEXTeamTreasuryOTTGasMock.deploy()).address;
                 const erroredTreasury = (await OrderbookDEXTeamTreasuryErroredMock.deploy()).address;
+                const invalidTreasury = ZERO_ADDRESS;
                 return setup({
                     ...ctx,
                     util,
@@ -55,6 +57,7 @@ export function createTreasuryUtilScenario<Context>({
                     ottFeeTreasury,
                     ottGasTreasury,
                     erroredTreasury,
+                    invalidTreasury,
                 });
             },
         })
