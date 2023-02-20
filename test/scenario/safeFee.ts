@@ -1,5 +1,5 @@
-import { Address } from '@frugal-wizard/abi2ts-lib';
-import { EthereumSetupContext, TestSetupContext } from '@frugal-wizard/contract-test-helper';
+import { Address } from '@frugalwizard/abi2ts-lib';
+import { EthereumSetupContext, TestSetupContext } from '@frugalwizard/contract-test-helper';
 import { IOrderbookDEXTeamTreasury } from '../../src/interfaces/IOrderbookDEXTeamTreasury';
 import { createTreasuryUtilScenario, Treasury, TreasuryUtilContext, TreasuryUtilScenario } from './TreasuryUtil';
 

@@ -1,5 +1,5 @@
-import { Address, parseValue, ZERO_ADDRESS } from '@frugal-wizard/abi2ts-lib';
-import { createEthereumScenario, EthereumScenario, EthereumSetupContext, TestSetupContext } from '@frugal-wizard/contract-test-helper';
+import { Address, parseValue, ZERO_ADDRESS } from '@frugalwizard/abi2ts-lib';
+import { createEthereumScenario, EthereumScenario, EthereumSetupContext, TestSetupContext } from '@frugalwizard/contract-test-helper';
 import { OrderbookDEXTeamTreasuryErroredMock } from '../../src/testing/OrderbookDEXTeamTreasuryErroredMock';
 import { OrderbookDEXTeamTreasuryMock } from '../../src/testing/OrderbookDEXTeamTreasuryMock';
 import { OrderbookDEXTeamTreasuryOTTGasMock } from '../../src/testing/OrderbookDEXTeamTreasuryOTTGasMock';

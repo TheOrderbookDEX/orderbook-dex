@@ -1,4 +1,4 @@
-import { parseValue } from '@frugal-wizard/abi2ts-lib';
+import { parseValue } from '@frugalwizard/abi2ts-lib';
 import { createSafeFeeScenario } from '../scenario/safeFee';
 import { Treasury } from '../scenario/TreasuryUtil';
 
